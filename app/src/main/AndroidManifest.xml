@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clipboardmanager"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/application_name"
+        android:theme="@style/AppView"
+        tools:ignore="AllowBackup">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/application_name"
+            android:documentLaunchMode="always"
+            android:maxRecents="1"
+            tools:targetApi="lollipop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <data android:mimeType="text/plain" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".NoteActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".AppService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name=".appService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

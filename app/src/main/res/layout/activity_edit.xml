@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize" />
+
+    <ScrollView
+        android:windowSoftInputMode="adjustResize"
+        android:background="@color/background"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/note_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:text="text"
+                android:minLines="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="40dp"
+                android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+                android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:background="@null"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                tools:ignore="HardcodedText,PrivateResource"
+                android:paddingStart="@dimen/abc_dropdownitem_text_padding_left"
+                android:paddingEnd="@dimen/abc_dropdownitem_text_padding_right" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:background="@color/teal" />
+            <ImageButton
+                android:id="@+id/note_save"
+                android:contentDescription="@string/to_save"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="@dimen/size"
+                android:layout_height="@dimen/size"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp"
+                android:background="@null"
+                android:src="@drawable/icon_copy"
+                android:scaleType="centerInside"
+                android:onClick="onClickSave" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="application_name">Clipboard Manager</string>
+    <string name="note_title">%1$s</string>
+    <string name="note_share">Отправить</string>
+    <string name="note_delete">Удалить</string>
+    <string name="message_copy">%1$s скопировано</string>
+    <string name="note_new_text">📌 Создать новую запись</string>
+    <string name="title_main">"Clipboard Manager"</string>
+    <string name="format_date">EEE, dd MMM</string>
+    <string name="format_time">HH:mm</string>
+    <string name="title_editor">Редактировать</string>
+    <string name="to_share">Отправить в…</string>
+    <string name="to_save">Сохранить</string>
+    <string name="to_cancel">Отменить</string>
+    <string name="message_delete">Удалено</string>
+    <string name="message_no_save">Не сохранено</string>
+    <string name="to_delete">Удалить</string>
+    <string name="title_new_note_editor">Новая запись</string>
+    <string name="to_add">Добавить</string>
+    <string name="to_delete_all">Очистить всё</string>
+    <string name="message_delete_all">Вы уверены, что хотите очистить все записи?\nИзбранные записи сохраняются.</string>
+    <string name="message_yes">Да</string>
+    <string name="message_cancel">Отмена</string>
+</resources>

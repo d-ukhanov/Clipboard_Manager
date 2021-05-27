@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditActivity">
+    <item
+        android:id="@+id/star"
+        android:icon="@drawable/icon_star_off"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/icon_share"
+        app:showAsAction="ifRoom|withText"
+        tools:ignore="MenuTitle" />
+    <group>
+        <item
+            android:id="@+id/cancel"
+            android:title="@string/to_cancel"
+            app:showAsAction="never|withText" />
+        <item
+            android:id="@+id/delete"
+            android:title="@string/to_delete"
+            app:showAsAction="never|withText" />
+    </group>
+</menu>
